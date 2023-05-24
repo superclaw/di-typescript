@@ -1,0 +1,42 @@
+@import '../../assets/style/config';
+
+.nav {
+  padding: 50px 30px;
+  background-color: $color-greybg;
+  max-width: 300px;
+  width: 100%;
+  overflow: auto;
+
+  @include media-1300 {
+    max-width: 100%;
+    padding: 20px 46px;
+  }
+
+  @include media-576 {
+    padding: 20px 16px;
+  }
+
+  &__container {
+    @include media-992 {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    gap: 10px;
+    @include flex-column;
+
+    @include media-1300 {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    @include media-1300 {
+      margin-right: 10px;
+      max-width: max-content;
+    }
+  }
+}

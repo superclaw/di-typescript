@@ -1,0 +1,12 @@
+@import '../../assets/style/config';
+
+.header {
+  width: 100%;
+  padding: 10px 50px;
+  justify-content: space-between;
+  @include flex;
+
+  @include media-576 {
+    padding: 17px 16px;
+  }
+}

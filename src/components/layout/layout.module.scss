@@ -1,0 +1,31 @@
+@import '../../assets/style/config';
+
+.layout {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: stretch;
+  @include flex;
+}
+
+.content {
+  flex: 1;
+  @include flex;
+
+  @include media-1300 {
+    flex-direction: column;
+  }
+}
+
+.main {
+  width: 100%;
+  padding: 50px;
+  justify-content: center;
+  @include flex;
+
+  @include media-576 {
+    padding: 16px;
+    background-color: $color-greybg;
+  }
+}
